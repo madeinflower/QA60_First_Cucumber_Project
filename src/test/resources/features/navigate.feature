@@ -1,5 +1,7 @@
-Feature: Homepage
-  Scenario: Verify HomePage is displayed
-    Given user launches Chrome browser
-    When user opens ilCarro HomePage
+Feature: HomePage
+  @Navigate
+  Scenario: Verify HomePage title is displayed
+    Given user lunches Chrome browser
+    When user opens ilcarro HomePage
     Then user verifies HomePage title
+    And user quits browser
